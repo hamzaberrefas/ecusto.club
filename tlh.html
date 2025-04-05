@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE LAST HOPE - Cosmo Mission</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #f9fafb;
+      --color-text: #250b9a;
+      --color-accent: #2563eb;
+      --color-header-bg: #f2f2f2;
+      --color-footer-bg: #f2f2f2; /* white footer */
+      --insta-img-size: 150px; /* Control Instagram image size */
+    }
+
+    body {
+      background-color: var(--color-bg);
+    }
+    
+    header {
+      background-color: var(--color-header-bg);
+    }
+    footer {
+      background-color: var(--color-footer-bg);
+      color: #1f2937; /* dark text on white footer */
+    }
+    a {
+      color: var(--color-accent);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      background-color: var(--color-accent);
+      color: white;
+    }
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+    :root {
+  --insta-img-size: 100px; /* Set the size to 100px */
+}
+    .insta-img {
+      width: var(--insta-img-size);
+      height: var(--insta-img-size);
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #f59540;
+      transition: transform 0.3s;
+    }
+    .insta-img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="shadow p-4 flex justify-center items-center">
+    <img src="./assets/images/logo2.svg" alt="Event Logo" class="h-16">
+  </header>
+
+  <!-- Hero / About Section -->
+  <section id="about" class="text-center pt-16 pb-0 px-6">
+    <h1 class="text-4xl font-bold mb-4" style="color: #250b9a;">THE LAST HOPE Cosmo Mission</h1>
+    <p class="max-w-2xl mx-auto text-lg" style="color: #000000;">
+      A national robotics competition hosted by EC-USTO Club & VOLTATEC Club at USTO-MB. Students from all over Algeria will design and compete with multifunctional robots to complete space-themed challenges. Join us April 9–12, 2025 in Oran!
+    </p>
+    <div class="flex justify-center mt-8">
+        <a href="form.html" target="_blank" rel="noopener noreferrer">
+          <button type="button"
+            class="flex items-center justify-center space-x-2"
+            style="
+              background-color: #f59540;
+              color: white;
+              padding: 10px 28px;
+              width: 200px;
+              border-radius: 27px;
+              font-size: 1rem;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            <span>Register Now</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </a>
+      </div>
+      
+  </section>
+
+  <!-- Instagram Section -->
+  <section id="instagram" class="text-center py-16 px-6">
+    <h2 class="text-2xl font-semibold mb-4" style="color: #250b9a;">Follow the Event on Instagram</h2>
+    <p class="mb-4">Stay updated, watch behind-the-scenes & share your experience!</p>
+    <div class="flex justify-center space-x-6">
+      <div>
+        <a href="https://www.instagram.com/ec.usto?igsh=MTB1Z3hlOW1oZTgwNw==" target="_blank">
+          <img src="./assets/images/ec.png" alt="ECUSTO Instagram" class="insta-img">
+        </a>
+        <p class="mt-2 font-semibold"><a href="https://www.instagram.com/ec.usto?igsh=MTB1Z3hlOW1oZTgwNw==" target="_blank" class="hover:underline">@ec.usto</a>
+        </p>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/voltatec?igsh=MXZjb3ppYmk2bTlsMg==" target="_blank">
+          <img src="./assets/images/volta.png" alt="VOLTATEC Instagram" class="insta-img">
+        </a>
+        <p class="mt-2 font-semibold" ><a href="https://www.instagram.com/voltatec?igsh=MXZjb3ppYmk2bTlsMg==" target="_blank" class="hover:underline">@voltatec</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-8">
+    <div class="max-w-xl mx-auto space-y-4"> <!-- Change this -->
+        <img src="./assets/images/logo2.svg" alt="Event Logo" class="mx-auto h-16">
+        <div class="space-y-1.6"> <!-- NEW: Group contact info -->
+          <p class="text-xl font-bold" style="color: #250b9a;">Contact:</p>
+          <p class="text-l font-semibold">Adresse: USTO-MB, Oran</p>
+          <p class="text-l font-semibold">Téléphone: +213668540070</p>
+          <p class="text-l font-semibold">E-mail: e-club@univ-usto.dz</p>
+        </div>
+        <hr class="my-6 border-t border-gray-400 w-full">
+        <p class="text-sm">2025 THE LAST HOPE - Cosmo Mission | Organized by EC-USTO Club & VOLTATEC Club .</p>
+      </div>      
+  </footer>
+
+</body>
+</html>
